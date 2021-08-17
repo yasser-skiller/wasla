@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <div class="mt-4">
       <Title title="الأدوار" />
     </div>

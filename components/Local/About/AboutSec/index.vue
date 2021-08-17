@@ -1,5 +1,7 @@
 <template>
-  <div class="d-flex flex-wrap py-4 justify-content-between">
+<div >
+  <div class="container">
+   <div class="d-flex flex-wrap py-4 justify-content-between">
     <div class="col-11 col-lg-6 mx-auto">
       <p class="TitleFont">عن وصلة</p>
       <div class="txt">
@@ -24,6 +26,9 @@
       <img :src="Abouts.img" class="About_img" />
     </div>
   </div>
+</div>
+</div>
+
 </template>
 <script>
 import axios from "axios";
