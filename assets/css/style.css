@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+:root {
+  --mainColor: #922d3e;
+  --GrayColor: #fafafa;
+  --SecGrayColor: #9a9a9a;
+}
+
+body{
+  font-family: "Almarai", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  font-size: 16px;
+  text-align: start !important;
+}
+.TitleFont {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--mainColor);
+}
+.mainColor {
+  color: var(--mainColor);
+}
+.MainFont {
+  font-size: 14px;
+}
+.bg-MainColor {
+  background-color: var(--mainColor) !important;
+}
+.SecGrayColor {
+  color: var(--SecGrayColor);
+}
+.bg-gray {
+  background-color: var(--GrayColor);
+}
+.cursorPointer {
+  cursor: pointer;
+}
+a {
+  text-decoration: none !important;
+}
+
+.disc{
+  list-style-type:disc !important;
+}
+.disc li{
+  margin: 10px 0;
+}
