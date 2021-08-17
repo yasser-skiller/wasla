@@ -18,7 +18,6 @@ export default {
 
   mounted() {
     this.fetchData();
-    this.RandomImg();
   },
   data() {
     return {
@@ -32,30 +31,22 @@ export default {
         const res = await axios.get(`https://adminpanel.wasla.net/api/slider`);
         this.Slider_imgs = res.data;
         this.Select = 0;
+        console.log(res.data)
       } catch (error) {
         console.log(error);
       }
     },
-    RandomImg() {
-      setInterval(() => {
-        this.Next;
-      }, 900000);
-    },
     Next() {
       if (this.Select + 1 === this.Slider_imgs.length) {
-        this.Select = -1;
-        this.Select++;
       } else {
         this.Select++;
       }
     },
     Pre() {
-      if (this.Select + 1 === this.Slider_imgs.length) {
-        this.Select--;
-      }
-      if (this.Select === 0) {
+       if (this.Select === 0) {
         null;
-      } else {
+      }
+      else {
         this.Select--;
       }
     }

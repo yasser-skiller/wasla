@@ -231,8 +231,8 @@ button {
 
 .space {
   height: 400px;
-  @media (max-width: 535px) {
-    height: 460px;
-  }
 }
+@media (max-width: 535px) {
+    .space {height: 460px;}
+  }
 </style>
