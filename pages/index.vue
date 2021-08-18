@@ -3,8 +3,10 @@
 
     <WaslaNave />
     <Slider/>
-    <AboutSec />
-    <AboutAllTaskes/>
+    <div class="bg-gray">
+      <AboutSec />
+      <AboutAllTaskes/>
+    </div>
     <Programmes />
     <Services />
     <Blogers/>

@@ -1,8 +1,10 @@
 <template>
   <div>
     <WaslaNave />
-    <AboutSce />
-    <AboutAllTaskes />
+    <div class="bg-gray">
+      <AboutSec />
+      <AboutAllTaskes/>
+    </div>
     <CallUsParent />
     <Footer />
   </div>

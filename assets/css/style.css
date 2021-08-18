@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
 
 :root {
   --mainColor: #922d3e;
@@ -7,9 +7,7 @@
 }
 
 body{
-  font-family: "Almarai", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Almarai", sans-serif !important;
   direction: rtl;
   font-size: 16px;
   text-align: start !important;
