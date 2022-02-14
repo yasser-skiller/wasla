@@ -95,6 +95,7 @@
 </template>
 
 <script>
+import config from "@/config";
 import axios from "axios";
 
 export default {
@@ -111,7 +112,7 @@ export default {
     async fetchData() {
       try {
         const res = await axios.get(
-          `https://adminpanel.wasla.net/api/settings`
+          `${config.apiUrl}/settings`
         );
         this.socialData = res.data;
       } catch (error) {

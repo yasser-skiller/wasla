@@ -146,6 +146,7 @@
 </template>
 
 <script>
+import config from "@/config";
 import axios from "axios";
 
 export default {
@@ -172,7 +173,7 @@ export default {
     async fetchData() {
       try {
         const res = await axios.get(
-          `https://adminpanel.wasla.net/api/services`
+          `${config.apiUrl}/services`
         );
         this.Services = res.data;
         console.log(res.data);
@@ -203,7 +204,7 @@ export default {
           service: this.service,
         };
         axios
-          .post(`https://adminpanel.wasla.net/api/order`, info)
+          .post(`${config.apiUrl}/order`, info)
           .then((res) => {
             console.log(res);
             console.log(res.status);

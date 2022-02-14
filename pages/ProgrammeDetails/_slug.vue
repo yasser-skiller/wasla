@@ -66,6 +66,7 @@
   </div>
 </template>
 <script>
+import config from "@/config";
 import axios from "axios";
 import WaslaNave from "@/components/Global/WaslaNave";
 
@@ -93,8 +94,9 @@ export default {
     async fetchData() {
       try {
         const res = await axios.get(
-          `https://adminpanel.wasla.net/api/programs/${this.$route.params.slug}`
+          `${config.apiUrl}/programs/${this.$route.params.slug}`
         );
+        console.log("Asdad",res)
         this.programmes_Details = res.data;
         this.programmes_Details_units = JSON.parse(res.data.units);
       } catch (error) {

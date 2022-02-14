@@ -26,6 +26,7 @@
   </div>
 </template>
 <script>
+import config from "@/config";
 import axios from "axios";
 import WaslaNave from "@/components/Global/WaslaNave";
 
@@ -52,7 +53,7 @@ export default {
     async fetchData() {
       try {
         const res = await axios.get(
-          `https://adminpanel.wasla.net/api/posts/${this.$route.params.slug}`
+          `${config.apiUrl}posts/${this.$route.params.slug}`
         );
         this.Blogers_Details = res.data;
       } catch (error) {

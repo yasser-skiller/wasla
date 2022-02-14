@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import config from "@/config";
+
 import axios from "axios";
 
 export default {
@@ -28,7 +30,7 @@ export default {
   methods: {
     async fetchData() {
       try {
-        const res = await axios.get(`https://adminpanel.wasla.net/api/slider`);
+        const res = await axios.get(`${config.apiUrl}/slider`);
         this.Slider_imgs = res.data;
         this.Select = 0;
         console.log(res.data)

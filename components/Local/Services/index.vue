@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import config from "@/config";
 import axios from "axios";
 import Title from "@/components/Global/Title";
 
@@ -54,7 +55,7 @@ export default {
     async fetchData() {
       try {
         const res = await axios.get(
-          `https://adminpanel.wasla.net/api/services`
+          `${config.apiUrl}/services`
         );
         this.Service = res.data;
         console.log(res.data);

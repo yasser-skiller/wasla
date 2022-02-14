@@ -54,6 +54,8 @@
   </div>
 </template>
 <script>
+import config from "@/config";
+
 import axios from "axios";
 
 import AskService from "@/components/Global/AskService";
@@ -85,7 +87,7 @@ export default {
     async fetchData() {
       try {
         const res = await axios.get(
-          `https://adminpanel.wasla.net/api/services/${this.$route.params.slug}`
+          `${config.apiUrl}/services/${this.$route.params.slug}`
         );
         this.ServicesDetails = res.data;
         console.log(res.data);

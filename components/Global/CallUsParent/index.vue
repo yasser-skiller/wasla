@@ -146,6 +146,7 @@
 </template>
 
 <script>
+import config from "@/config";
 import axios from "axios";
 
 export default {
@@ -185,7 +186,7 @@ export default {
           subject: this.subject,
         };
         axios
-          .post(`chttps://adminpanel.wasla.net/api/contat`, info)
+          .post(`${config.apiUrl}/contat`, info)
           .then((res) => {
             console.log(res);
             console.log(res.status);
