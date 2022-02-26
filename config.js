@@ -1,3 +1,3 @@
 export default {
-  apiUrl:'https://jsonplaceholder.typicode.com'
+  apiUrl:'https://dangerous-fly-86.loca.lt/api'
 }
